@@ -2,13 +2,14 @@ defmodule RocketpayWeb.Router do
   use RocketpayWeb, :router
 
   pipeline :api do
-    plug :accepts, ["json"]
+    plug(:accepts, ["json"])
   end
 
   scope "/api", RocketpayWeb do
-    pipe_through :api
+    pipe_through(:api)
 
-    get "/:filename", WelcomeController, :index
+    get("/:filename", WelcomeController, :index)
+    post("/users", UsersController, :create)
   end
 
   # Enables LiveDashboard only for development
@@ -22,8 +23,8 @@ defmodule RocketpayWeb.Router do
     import Phoenix.LiveDashboard.Router
 
     scope "/" do
-      pipe_through [:fetch_session, :protect_from_forgery]
-      live_dashboard "/dashboard", metrics: RocketpayWeb.Telemetry
+      pipe_through([:fetch_session, :protect_from_forgery])
+      live_dashboard("/dashboard", metrics: RocketpayWeb.Telemetry)
     end
   end
 end
