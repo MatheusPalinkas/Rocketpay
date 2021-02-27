@@ -1,19 +1,11 @@
 # Rocketpay
 
-To start your Phoenix server:
+API de pagamentos criada a partir das aulas da **next level week 4**
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+## Iniciar projeto
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+1. Instalar dependências com `mix deps.get`
+2. Criar banco e executar migrates com o comando `mix ecto.setup`
+3. Iniciar servidor Phoenix com `mix phx.server`
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Aplicação estará disponível em [`localhost:4000`](http://localhost:4000) do navegador.
